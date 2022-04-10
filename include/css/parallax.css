@@ -80,6 +80,23 @@
     width: 100%;
 }
 
+.btnMenuContainer{
+    margin: 15px;
+}
+
+.btnMenu{
+  transition: all 0.3s ease-in-out;
+  color: white;
+  padding: 10px;
+  top: 0%;
+    height: 100%;
+}
+
+.btnMenu:hover {
+  color: #000;
+  background: #fff;
+}
+
 .btn_2 {
   border: 1.5px solid #fff;
   border-radius: 0.75rem;
@@ -133,7 +150,7 @@
     }
     
     .options-container h2{
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 0.1;
     }
     
@@ -162,9 +179,12 @@
     }
     
     .options-container{
-        top: 70%;
+        top: 73%;
     }
     
+    .options-container h2{
+        font-size: 2.0rem;        
+    }
     
     .buttons-container{
         

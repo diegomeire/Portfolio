@@ -448,8 +448,19 @@ $(document).ready(function(){
 	BRUSHED.toolTip();
 });
 
+   $(document).scroll(function () {
+        $('section').each(function () {
+            if($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
+                console.log($(this).attr('id'));
+            }
+        });
+    });
+    
+    
 $(window).resize(function(){
 	BRUSHED.mobileNav();
 });
 
 });
+
+
