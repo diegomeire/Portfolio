@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+@font-face {
+  font-family: Bebas;
+  src: url('../fonts/BebasKai-Regular.otf');
+}
+
+
+
+
+.title-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 34rem;
+  height: 30rem;
+}
+
+
+.title-container h1 {
+  font-family: Bebas, sans-serif;
+  font-weight: 400;
+  position: absolute;
+  font-size: 12.5rem;
+}
+
+
+.title-container h1:nth-of-type(1) {
+  top: 10%;
+}
+
+.title-container h1:nth-of-type(2) {
+  left:30%;
+  bottom: 0;
+}
+
+.title-container h1:nth-of-type(3) {
+  top: 0;
+  right: 30%;
+}
+
+.title-container h1:nth-of-type(4) {
+  right: 0;
+  bottom: 20%;
+}
+
+.options-container{
+    position: absolute;
+    align-content: center;
+    width: 100vh;
+    height: 5rem;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.options-container h2{
+    font-size: 1.5rem;
+    line-height: 0.5;
+    text-align: center;
+}
+
+
+.buttons-container{
+    position: absolute;
+    height: 50px;
+    align-content: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    display: inline;
+    top: 50%;
+    width: 100%;
+}
+
+.btn_2 {
+  border: 1.5px solid #fff;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+    color: white;
+
+  
+}
+
+.btn_2:hover {
+  color: #000;
+  background: #fff;
+}
+
+
+.diego{
+  width: 50%;
+  position: absolute;
+  background-color: clear;
+  left: 0%;
+  height: 100%;
+  top: 0;  
+    
+}
+
+
+.diegoHolder{
+    left: 0px;
+    width: 50%;
+    height: 70vh;
+    
+}
+
+@media (max-width: 760px){
+
+    .title-container h1{
+        font-size: 7.0rem;
+        
+    }
+    
+    .title-container {
+        margin-left: -20px;
+        width: 17rem;
+        height: 19rem;
+        top: 45%;
+    }
+    
+    .options-container{
+        top: 70%;
+    }
+    
+    .options-container h2{
+        font-size: 1rem;
+        line-height: 0.1;
+    }
+    
+    .btn_2{
+        font-size: 1.0rem;    
+            margin: 5px;
+    }
+    
+    .buttons-container{
+        top: 65%;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 760px){
+
+     .title-container {
+        height: 33rem;
+        top: 45%;
+    }
+    
+    .btn_2{
+        font-size: 1.0rem;
+            margin: 10px;
+    }
+    
+    .options-container{
+        top: 70%;
+    }
+    
+    
+    .buttons-container{
+        
+        top: 73%;
+        width: 100%;
+    }
+    
+     .btn_2{
+        font-size: 1.5rem;
+    }
+    
+}

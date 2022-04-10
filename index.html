@@ -26,7 +26,9 @@
 
 <!-- Main Style -->
 <link href="include/css/main.css" rel="stylesheet">
+<link href="include/css/parallax.css" rel="stylesheet">
 
+    
 <!-- Supersized -->
 <link href="include/css/supersized.css" rel="stylesheet">
 <link href="include/css/supersized.shutter.css" rel="stylesheet">
@@ -50,6 +52,8 @@
 
 <!-- Google Font -->
 <link href="include/css/titilium.css" rel="stylesheet">
+    
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>    
 
 <!-- Fav Icon -->
 <link rel="shortcut icon" href="#">
@@ -88,7 +92,11 @@
 
 </head>
 
-
+    <style>
+      model-viewer#reveal {
+        --poster-color: transparent;
+      }
+    </style>
 <body>
 
 <!-- This section is for Splash Screen -->
@@ -111,19 +119,31 @@
 
 
 <div id="home-slider">	
-    
-    <div class="panel" style="display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-	<h1>Diego Meire</h1>
-    <h2><center>Portfolio</center></h2>
-	
-</div>
+    <div id="heroDiego"></div>
+    <div class="title-container">
+        <h1>Diego</h1>
+        <h1>Meire</h1>
+    </div>
+    <div class="options-container">
+        <h2>Creative Technologist</h2>
+          <h2>Game Developer</h2>
+    </div>
+  
+    <!--<div class="buttons-container">
+        <center>
+            <a href="#about" class="btn_2">About</a>
+            <a href="#" class="btn_2">History</a>
+            <a href="#" class="btn_2">Portfolio</a>
+        </center>
+    </div>
+-->
+
     
     
    <div id="particles-js"></div>
 
     
 <!-- scripts -->
-<script src="include/js/particles.js"></script>
 <script src="include/js/app.js"></script>
 
     
@@ -159,7 +179,10 @@
 <div id="about" class="page-alternate">
 <div class="container">
     <!-- Title Page -->
+    
+    
     <div class="row">
+        
         <div class="span12">
             <div class="title-page">
                 <h2 class="title">About Me</h2>
@@ -173,13 +196,17 @@
     	
         
         <!-- Start Profile -->
-    	<div class="span4">
+    	<div class="span5">
         	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb"></span>
+                
+                <!--<img src="./include/img/profile/Diego.jpg" alt="Diego Meire">-->
+                
+                <div class="diegoHolder">
+                  <model-viewer id="reveal" class="diego" loading="eager" poster="assets/DiegoPoster.png" src="assets/Diego.gltf" ios-src="assets/Diego.usdz" alt="3D visualization" shadow-intensity="1" camera-controls interaction-prompt="auto" autoplay ar magic-leap data-js-focus-visible/>
                 </div>
-                <img src="./include/img/profile/Diego.jpg" alt="Diego Meire">
+                
+                
+                
             </div>
           
             
@@ -188,7 +215,7 @@
         
         
         <!-- Start Profile -->
-    	<div class="span8">
+    	<div class="span5">
         	
             <p class="profile-description">A programmer since the age of 14. I first discovered the wonders of software development when I got in touch with my first game development platform back in 1997. Since then, development has been my life and I realized that a lot of my creative impulses could be satisfied with software development. At 18, I was already working as a software developer and studying Computer Science and from then on I've been on this amazing journey of discovery and accomplishment that technology provides.</p>
             
@@ -981,6 +1008,14 @@ Firebird, SQL Server, Oracle, databases;</p>
 <script src="include/js/jquery.tweet.js"></script> <!-- Tweet -->
 <script src="include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="include/js/main.js"></script> <!-- Default JS -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js'></script>
+<script src='https://github.com/mrdoob/three.js/blob/master/src/constants.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+
+<script src="include/js/script3d.js"></script> <!-- Default JS -->
+
 <!-- End Js -->
 
 </body>

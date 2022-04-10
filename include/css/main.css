@@ -636,14 +636,14 @@ nav#menu #menu-nav li a:hover {
 
 .page-alternate {
 	background: #26292E;
-	padding: 100px 0;
+	padding: 50px 0;
 	position: relative;
 	z-index: 99;
 }
 
 .title-page {
 	text-align: center;
-	margin-bottom: 100px;	
+	margin-bottom: 50px;	
 }
 
 .title-page .title {
@@ -794,10 +794,15 @@ nav#menu #menu-nav li a:hover {
 	overflow: hidden;
 	margin-bottom: 25px;
 	cursor: pointer;
+    height: 100%;
 }
 
 .image-wrap img {
 	width: 100%;	
+}
+
+.image-wrap .diego{
+    width: 100%;
 }
 
 .image-wrap  .hover-wrap {
